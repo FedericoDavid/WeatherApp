@@ -23,7 +23,7 @@ export const App = () => {
   useEffect(() => {
     const fetchWeather = async () => {
       await getFormattedWeatherData({ ...query, units }).then((data) => {
-        toast.success(`Successfully loaded for ${data.name}, ${data.country}`);
+        toast.success(`Successfully loaded: ${data.name}, ${data.country}`);
 
         setWeather(data);
       });

@@ -4,7 +4,7 @@ const DefaultCitiesButtons = ({ setQuery }) => {
   const cities = [
     {
       id: 1,
-      title: 'London',
+      title: 'New York',
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ const DefaultCitiesButtons = ({ setQuery }) => {
     },
     {
       id: 5,
-      title: 'Paris',
+      title: 'London',
     },
   ];
 

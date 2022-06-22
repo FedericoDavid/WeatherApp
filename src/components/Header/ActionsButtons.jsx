@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 
 import getCurrentLocation from '../../utils/getCurrentLocation';
 
-const Actions = ({ setQuery, units, setUnits }) => {
+const ActionsButtons = ({ setQuery, units, setUnits }) => {
   const [city, setCity] = useState('');
 
   const onUnitsChange = (e) => {
@@ -33,6 +33,7 @@ const Actions = ({ setQuery, units, setUnits }) => {
           value={city}
           onChange={(e) => setCity(e.currentTarget.value)}
           type='text'
+          autoFocus
           placeholder='Search city'
           className='text-xl font-light p-2 w-full shadow-xl focus:outline-none capitalize'
         />
@@ -69,4 +70,4 @@ const Actions = ({ setQuery, units, setUnits }) => {
   );
 };
 
-export default Actions;
+export default ActionsButtons;
